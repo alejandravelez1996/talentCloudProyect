@@ -1,0 +1,188 @@
+
+/* UserCard.css */
+.user-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.user-card-info {
+  flex: 1;
+}
+
+.user-card-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.user-card-info p {
+  margin: 5px 0;
+}
+
+.user-card-info .id {
+  font-weight: bold;
+}
+
+.user-card-info .empresa {
+  color: #555;
+}
+
+.user-card-info button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.user-card-info button:hover {
+  background-color: #0056b3;
+}
+
+.user-card-info button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px; /* You can adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.modal-content h2 {
+  margin-top: 0;
+}
+
+/* Form elements */
+.modal-content label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.modal-content input,
+.modal-content select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.modal-content button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #007bff; /* Primary button color */
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+.modal-content button.close-button {
+  background-color: #6c757d; /* Secondary button color */
+}
+
+.modal-content button.close-button:hover {
+  background-color: #5a6268; /* Darker shade for hover */
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+/* Contenedor para los controles (filtros, búsqueda y botón) */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espacio entre los elementos */
+  margin-bottom: 1rem; /* Espacio debajo de los controles */
+  padding: 1rem; /* Espacio interno para el contenedor */
+  background-color: #f4f4f4; /* Color de fondo del contenedor */
+}
+
+/* Estilos para el botón "Add New" */
+.add-new-button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none;
+  padding: 0.5rem 1rem; /* Espaciado interno del botón */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.add-new-button:hover {
+  background-color: #0056b3; /* Color de fondo cuando el cursor pasa sobre el botón */
+}
+
+/* Estilos para los componentes de filtro y búsqueda */
+.filters,
+.search {
+  margin: 0;
+  border: none;
+  padding: 0.5rem 1rem; /* Espaciado interno del botón */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo específico para el campo de búsqueda */
+.search input,
+.filtersAll{
+  padding: 0.5rem; /* Espaciado interno del campo de búsqueda */
+  border: 1px solid #ddd; /* Borde del campo de búsqueda */
+  border-radius: 4px; /* Bordes redondeados */
+}
+.Aline{
+  text-align: justify;
+}
+/* Ajusta el diseño para el contenedor de tarjetas de usuario */
+.user-list {
+  display: grid;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si es necesario */
+  gap: 1rem; /* Espaciado entre las tarjetas */
+ 
+}
